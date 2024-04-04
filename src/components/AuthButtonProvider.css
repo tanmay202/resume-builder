@@ -1,0 +1,122 @@
+/* AuthButtonProvider.css */
+
+/* Google button styles */
+.googlebtn {
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    rgb(174, 174, 21),
+    orange,
+    red,
+    rgb(34, 246, 31),
+    rgb(8, 166, 29),
+    blue,
+    yellow
+  );
+  background-size: 400%;
+  z-index: 1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.googlebtn:hover {
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.googlebtn:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(45deg, #f15523, #ef3224, #419736);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5%;
+}
+
+.googlebtn:hover::before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+/* GitHub button styles */
+
+.githubtn {
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    rgb(2, 0, 8),
+    rgb(13, 2, 56),
+    rgb(19, 9, 92),
+    rgb(4, 8, 118),
+    rgb(11, 58, 188),
+    rgb(4, 8, 99),
+    rgb(2, 5, 48)
+  );
+  background-size: 400%;
+  z-index: 1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.githubtn:hover {
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.githubtn:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(45deg, #040124, #020d5e, #02328a);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5%;
+}
+
+.githubtn:hover::before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
